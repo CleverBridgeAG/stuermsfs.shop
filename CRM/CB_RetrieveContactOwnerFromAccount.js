@@ -4,6 +4,6 @@ void automation.CB_RetrieveContactOwnerFromAccount(Int id_contact,Int id_owner,S
 // MAPS
 v_map_update = Map();
 v_map_update.put("Owner",id_owner);
-v_map_update.put("vkbur",vkbur);
+v_map_update.put("vkbur_con",vkbur);
 v_resp = zoho.crm.updateRecord("Contacts",id_contact,v_map_update);
 }
