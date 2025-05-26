@@ -16,7 +16,7 @@ if(v_module == "Quotes")
 	{
 		v_id_account = v_account.get("id");
 		account = zoho.crm.getRecordById("Accounts",v_id_account);
-		v_id_owner = account.get("Owner").get("id");
+		v_id_owner = account.get("vid").get("id");
 		// update task owner
 		v_map_update.put("Owner",v_id_owner);
 		v_resp = zoho.crm.updateRecord("Tasks",ID,v_map_update);
