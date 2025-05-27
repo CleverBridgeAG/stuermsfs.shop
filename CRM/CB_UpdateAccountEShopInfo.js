@@ -9,7 +9,7 @@ v_map_update = Map();
 v_map_query = Map();
 // LISTS
 // LOGIC
-v_map_query.put("select_query","SELECT id FROM Contacts WHERE ((Account_Name = " + ID + ") AND eshop_user = true) LIMIT 1");
+v_map_query.put("select_query","SELECT id FROM Contacts WHERE ((Account_Name = " + ID + ") AND SAP_Kontakt1 = anlegen) LIMIT 1");
 v_resp2 = invokeurl
 [
 	url :"https://www.zohoapis.eu/crm/v7/coql"
