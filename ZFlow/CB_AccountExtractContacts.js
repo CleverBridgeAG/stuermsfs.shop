@@ -27,7 +27,8 @@ catch (e)
 try 
 {
 	v_section = payload.get("ZDEBMAS7").get("IDOC").get("E1KNA1M").get("E1KNVKM");
-	for each  ele in v_section
+	v_list_section = v_section.toList();
+	for each  ele in v_list_section
 	{
 		v_PARNR = ele.get("PARNR");
 		if(v_contact_KUNN2.contains(v_PARNR))
