@@ -32,6 +32,13 @@ for each  v_user in v_list_users
 	v_list_to.add(v_map_to);
 }
 v_map_maildata.put("to",v_list_to);
+// CC
+v_list_cc = list();
+v_map_cc = Map();
+v_map_cc.put("user_name","Urs Schmitter");
+v_map_cc.put("email","urs.schmitter@stuermsfs.com");
+v_list_cc.add(v_map_cc);
+v_map_maildata.put("cc",v_list_cc);
 // SUBJECT + CONTENT
 v_current_user_name = ifnull(v_map_current_user.get("name"),"");
 v_subject = "Besuchsbericht wurde aktualisiert für Kunde: " + v_account_name;
